@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Viagem dos sonhos</title>
 </head>
 
@@ -11,14 +12,14 @@
     <header>
         <nav>
             <ul>
-                <li>Pacotes</li>
-                <li>Taxas</li>
-                <li>Contato</li>
+                <li> <a href="#">Pacotes</a></li>
+                <li> <a href="#">Taxas</a></li>
+                <li> <a href="#">Contato</a></li>
             </ul>
         </nav>
-        <h1>Venha realizar a viagem dos seus sonhos</h1>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
     </header>
-    <section>
+    <section id="pacotes">
         <h2>Conheça nossos pacotes</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto, expedita, illum impedit non
@@ -31,32 +32,34 @@
             similique! Omnis sunt enim molestiae laudantium, in accusamus voluptatum nisi, vel asperiores tenetur sit
             odio blanditiis.
             <br><br>
-            <a href="google.com">Link</a>
             <hr>
         </p>
-        <figure>
-            <img src="/img/gramado.jpg" alt="Foto 1">
-            <figcaption>Gramado</figcaption>
-        </figure>
-        <figure>
-            <img src="/img/porto-seguro.jpeg" alt="Foto 2">
-            <figcaption>Porto-Seguro</figcaption>
-        </figure>
-        <figure>
-            <img src="/img/recife.jpg" alt="Foto 3">
-            <figcaption>Recife</figcaption>
-        </figure>
+        <div class="figuras">
+            <figure>
+                <img src="/img/gramado.jpg" alt="Foto 1">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/porto-seguro.jpeg" alt="Foto 2">
+                <figcaption>Porto-Seguro</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/recife.jpg" alt="Foto 3">
+                <figcaption>Recife</figcaption>
+            </figure>
+        </div>
+        <div class="videos">
+            <video controls width="500px">
+                <source src="videos/5405662-hd_1080_1920_25fps.mp4" type="video/mp4">
+                <source src="/videos/5405662-hd_1080_1920_25fps.webm" type="video/webm">
+                Seu navegador não suporta o formado do vídeo. <a href="/videos/5405662-hd_1080_1920_25fps.mp4">Clique aqui para baixar</a>
+            </video>
+        </div>
     </section>
-    <video controls width="500px">
-        <source src="videos/5405662-hd_1080_1920_25fps.mp4" type="video/mp4">
-        <source src="/videos/5405662-hd_1080_1920_25fps.webm" type="video/webm">
-        Seu navegador não suporta o formado do vídeo. <a href="/videos/5405662-hd_1080_1920_25fps.mp4">Clique aqui para
-            baixar</a>
-    </video>
     <section>
         <h2>Taxas e serviços</h2>
         <p>Veja nossas taxas para serviços</p>
-        <table border>
+        <table>
             <caption>Descrição dos serviços e respectivos valores</caption>
             <thead>
                 <tr>
@@ -74,15 +77,7 @@
                         Reserva de hotel
                     </td>
                     <td>
-                        R$150,00
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Compra de passagens
-                    </td>
-                    <td>
-                        R$100,00
+                        R$500,00
                     </td>
                 </tr>
                 <tr>
@@ -90,7 +85,7 @@
                         Aluguel de carros
                     </td>
                     <td>
-                        R$50,00
+                        R$300,00
                     </td>
                 </tr>
             </tbody>
